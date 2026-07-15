@@ -1,20 +1,31 @@
 ---
+
 name: Feature request
-about: Suggest an idea for this project
-title: ''
-labels: ''
-assignees: ''
+description: Suggest an idea for NJORD Engine
+title: "[Feature]: "
+labels: ["enhancement"]
 
 ---
 
-**Is your feature request related to a problem? Please describe.**
-A clear and concise description of what the problem is. Ex. I'm always frustrated when [...]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / motivation
+      description: What are you trying to do that doesn't work today?
+    validations:
+      required: true
 
-**Describe the solution you'd like**
-A clear and concise description of what you want to happen.
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What you want to happen, e.g. API sketch or workflow.
+    validations:
+      required: true
 
-**Describe alternatives you've considered**
-A clear and concise description of any alternative solutions or features you've considered.
-
-**Additional context**
-Add any other context or screenshots about the feature request here.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and context
+      description: Workarounds you've tried, related issues, references.
