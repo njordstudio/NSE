@@ -1,9 +1,7 @@
----
 name: Feature request
 description: Suggest an idea for NJORD Engine
 title: "[Feature]: "
 labels: ["enhancement"]
----
 body:
   - type: textarea
     id: problem
