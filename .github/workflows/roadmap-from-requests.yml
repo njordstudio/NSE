@@ -1,0 +1,58 @@
+# When a feature request is triaged and labeled `accepted`, add it to the
+# "Community requests" list in ROADMAP.md automatically. Curation stays manual
+# (only labeled issues are added), the copy-paste is automated. Create the
+# `accepted` label once in the repo (Issues -> Labels) for this to trigger.
+name: Add accepted requests to the roadmap
+
+on:
+  issues:
+    types: [labeled]
+
+# Allow the workflow to commit the roadmap change back.
+permissions:
+  contents: write
+
+jobs:
+  add-to-roadmap:
+    # Only run for the `accepted` label, and never for pull requests.
+    if: github.event.label.name == 'accepted'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Insert the request into ROADMAP.md
+        env:
+          TITLE: ${{ github.event.issue.title }}
+          NUMBER: ${{ github.event.issue.number }}
+          URL: ${{ github.event.issue.html_url }}
+        run: |
+          set -euo pipefail
+          FILE="ROADMAP.md"
+          MARKER="<!-- COMMUNITY-REQUESTS:START -->"
+          LINE="- [ ] ${TITLE} ([#${NUMBER}](${URL}))"
+
+          # Idempotent: skip if this issue is already listed.
+          if grep -qF "([#${NUMBER}]" "$FILE"; then
+            echo "Issue #${NUMBER} already on the roadmap, nothing to do."
+            exit 0
+          fi
+
+          # Insert the new line directly after the START marker.
+          awk -v marker="$MARKER" -v line="$LINE" '
+            { print }
+            index($0, marker) { print line }
+          ' "$FILE" > "$FILE.tmp" && mv "$FILE.tmp" "$FILE"
+
+      - name: Commit the change
+        run: |
+          set -euo pipefail
+          git config user.name "njord-bot"
+          git config user.email "bot@njordstudio.com"
+          git add ROADMAP.md
+          # Only commit when something actually changed (avoids empty commits).
+          if git diff --cached --quiet; then
+            echo "No roadmap change to commit."
+          else
+            git commit -m "chore: add accepted feature request to roadmap (#${{ github.event.issue.number }})"
+            git push
+          fi

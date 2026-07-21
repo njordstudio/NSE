@@ -1,0 +1,7 @@
+# Show the Bug report / Feature request chooser and disable blank issues, so every
+# issue arrives with structure.
+blank_issues_enabled: false
+contact_links:
+  - name: Roadmap
+    url: https://github.com/njordstudio/NSE/blob/main/ROADMAP.md
+    about: See what is planned and in progress before opening a request.
