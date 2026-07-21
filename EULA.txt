@@ -2,14 +2,15 @@ NJORD Engine, END USER LICENSE AGREEMENT (EULA)
 
 Copyright (c) 2026 NJORD Studio AB. All rights reserved.
 
-This build (the "Software") is proprietary software owned by NJORD Studio AB.
-By downloading, installing or running the Software you agree to the terms below.
-If you do not agree, do not use the Software.
+This build (the "Software") is proprietary software owned by NJORD Studio AB
+("NJORD", "we", "us"). By downloading, installing or running the Software you
+agree to the terms below. If you do not agree, do not use the Software.
 
 1. LICENSE GRANT
-   NJORD Studio AB grants you a personal, non-exclusive, non-transferable,
-   revocable license to download and RUN this build on devices you own or
-   control, solely to play and to TEST it and report issues. Nothing else.
+   NJORD grants you a personal, non-exclusive, non-transferable, revocable
+   license to download and RUN this build on devices you own or control, solely
+   to play and to TEST it and report issues. This is an early, pre-release test
+   build provided free of charge. Nothing else is granted.
 
 2. RESTRICTIONS
    You may NOT, in whole or in part:
@@ -30,32 +31,74 @@ If you do not agree, do not use the Software.
    except the limited license in Section 1. All rights not expressly granted
    are reserved.
 
-4. TRADEMARKS
+4. YOUR CONTENT AND AI-GENERATED OUTPUT
+   The Software lets you create games and assets, including with the help of
+   third-party AI services that you connect using your own keys ("Output").
+   As between you and NJORD, NJORD claims no ownership of your projects or
+   Output and does not assert any license over them; you keep whatever rights
+   you have in what you create. You are solely responsible for your Output,
+   including for ensuring it does not infringe the intellectual property,
+   privacy or other rights of any third party. Output produced by AI models is
+   provided on an "as is" basis, may be inaccurate or similar to existing works,
+   and is not reviewed or guaranteed by NJORD.
+
+5. THIRD-PARTY AI AND OTHER SERVICES (BRING YOUR OWN KEYS)
+   The Software can connect to third-party services (for example AI providers
+   for building, and 3D model, rigging and animation providers) using API keys
+   that you supply. Your use of those services is governed by each provider's
+   own terms and pricing. You are responsible for obtaining your own keys, for
+   all usage and costs charged by those providers, and for complying with their
+   terms. NJORD is not a party to and is not responsible for those services,
+   their availability, their pricing, or their output.
+
+6. DATA AND PRIVACY
+   The Software is designed to keep your API keys on your machine (stored in
+   your operating system's keyring), and NJORD does not receive them. If you
+   choose to report a bug or request a feature, any information you submit
+   (which may include your operating system details, build version and anything
+   you include in a screenshot or description) is processed for the purpose of
+   improving the Software. Do not include sensitive personal data in reports.
+
+7. TRADEMARKS
    "NJORD" and the NJORD logo are trademarks of NJORD Studio AB. This EULA does
    not grant any right to use them.
 
-5. THIRD-PARTY COMPONENTS
+8. THIRD-PARTY COMPONENTS
    The Software includes third-party open-source components, each under its own
    license. Those licenses are reproduced in the accompanying
-   THIRD-PARTY-LICENSES.txt file and govern only those components.
+   THIRD-PARTY-LICENSES.txt file and govern only those components. To the extent
+   any such license conflicts with this EULA for that component, that license
+   controls for that component.
 
-6. NO WARRANTY
+9. NO WARRANTY
    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
    FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. This is an early,
    pre-release test build and may contain bugs.
 
-7. LIMITATION OF LIABILITY
+10. LIMITATION OF LIABILITY
    TO THE MAXIMUM EXTENT PERMITTED BY LAW, NJORD STUDIO AB SHALL NOT BE LIABLE
    FOR ANY DAMAGES WHATSOEVER ARISING OUT OF THE USE OF OR INABILITY TO USE THE
    SOFTWARE.
 
-8. TERMINATION
+11. MANDATORY RIGHTS
+   Nothing in this EULA excludes or limits any liability or right that cannot be
+   excluded or limited under applicable mandatory law (including liability for
+   death or personal injury caused by negligence, or for fraud or fraudulent
+   misrepresentation, and any non-waivable rights you may have as a consumer).
+   Where any provision of this EULA is unenforceable, it applies to the maximum
+   extent permitted and the remaining provisions stay in effect.
+
+12. TERMINATION
    This license terminates automatically if you breach any term. On termination
-   you must stop using and delete all copies of the Software.
+   you must stop using and delete all copies of the Software. Sections 3 to 11
+   survive termination.
 
-9. GOVERNING LAW
+13. GOVERNING LAW
    This EULA is governed by the laws of Sweden, without regard to its conflict
-   of law rules.
+   of law rules, and without prejudice to any mandatory consumer-protection
+   rights and remedies available to you under the law of your country of
+   residence.
 
-Contact: NJORD Studio AB , fredrik@njordstudio.com / njordstudio.com
+Contact: NJORD Studio AB, Reg. No. [INSERT SWEDISH ORG.NR], [INSERT REGISTERED
+ADDRESS], fredrik@njordstudio.com / njordstudio.com

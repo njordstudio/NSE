@@ -4,19 +4,20 @@ Public downloads and bug tracker for games built with **NJORD Engine**.
 This repository contains **finished builds only** , the engine and game source
 code are **not** public.
 
-> © 2026 NJORD Studio AB. All rights reserved. "NJORD Engine" is a trademark of
+> © 2026 NJORD Studio AB. All rights reserved. "NJORD Engine" is a product of
 > NJORD Studio AB. Use of the builds is governed by [EULA.txt](EULA.txt).
 
-## Download & play
+## Download & install
 
 1. Open the [**Releases**](../../releases) page.
-2. Download the latest `njord-<game>-v<version>.zip`.
-3. Unzip it anywhere.
-4. Double-click **`njord-engine.exe`** (or **`Play.bat`**).
+2. Download the latest `NJORD Studio_<version>_x64-setup.exe`.
+3. Run the installer.
 
-Windows may warn about an unknown publisher (the build is not code-signed yet) ,
-choose **More info -> Run anyway**. See `README.txt` inside the zip for controls;
-in-game, press **O** for Options (volume, resolution, key rebinding).
+Windows may warn about an unknown publisher (the app is not code-signed yet) ,
+choose **More info -> Run anyway**. Then open **NJORD Studio**, add your AI key(s)
+under **Settings**, and describe the game you want to build. See the
+[handbook](docs/handbook.md) for the full workflow.
+
 
 ## Report a bug
 
@@ -37,18 +38,20 @@ straight to the provider with no markup from us, and your keys stay on your mach
 (stored in your OS keyring, never in project files, never sent to us). Add them under
 **Settings** in the app.
 
-**Required , the AI agents**
+**Recommended , the AI agents (the CREW)**
 
-- **Anthropic (Claude)** , powers the agents that build your game from a prompt. Get a
-  key at [console.anthropic.com](https://console.anthropic.com). Without it you can
-  still open the app and edit everything by hand.
+- **Anthropic (Claude)** , recommended; best results for the agents that build your
+  game from a prompt. Key: [console.anthropic.com](https://console.anthropic.com).
+- **OpenAI-compatible** , or point the agents at any OpenAI-compatible endpoint,
+  including a local model on your own machine.
+- Not required , without any AI key you can open the app and build/edit by hand.
 
 **Optional , 3D model generation**
 
-- **Mesh (geometry + texture):** we recommend **Tripo** (best geometry), or **Meshy**.
-- **Rigging + animation:** we recommend **Meshy** (600+ motion-clip library).
-- **Hyper3D (Rodin)** , coming.
-- You can skip these entirely and import your own glTF models instead.
+- **Mesh (geometry + texture):** **Tripo** (best geometry) or **Meshy**.
+- **Rigging + animation:** **Meshy** (600+ motion-clip library).
+- **Hyper3D (Rodin)** , text-to-3D.
+- Skip these and import your own glTF models instead.
 
 The best results come from mixing providers: one for the mesh (e.g. Tripo) and another
 to rig + animate (e.g. Meshy). Pick each under Settings. See the
